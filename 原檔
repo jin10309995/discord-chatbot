@@ -1,9 +1,9 @@
 function webhook() {
-  const url = "連結"
+  const url = "取得的連結"
   const options = {
     "method": "post",
     "headers": {"Content-Type": "application/json; charset=UTF-8"},
-    "payload": JSON.stringify({"text": "文字"})
+    "payload": JSON.stringify({"text": "輸入發送之文字"})
   };
   const response = UrlFetchApp.fetch(url, options);
   console.log(response);
